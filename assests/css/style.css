@@ -1,0 +1,29 @@
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+}
+
+@media(max-width:768px){
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
